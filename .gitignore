@@ -1,6 +1,11 @@
-# Chrome Web Store release bundles (zip, store images) — never committed
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Chrome Web Store release bundles (zip, store images, logo masters) — never committed
 chrome/
-*.zip
 
 # OS / editor
 .DS_Store

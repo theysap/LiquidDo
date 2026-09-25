@@ -1,0 +1,14 @@
+<!-- LiquidDo logo — the checklist mark from the popup header. 22-unit artwork rendered at 1024 px. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 22 22" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#5B5FED"/>
+      <stop offset="100%" stop-color="#3A3FAD"/>
+    </linearGradient>
+  </defs>
+  <rect width="22" height="22" rx="6" fill="url(#bg)"/>
+  <circle cx="7" cy="9" r="2" fill="#fff" fill-opacity="0.9"/>
+  <rect x="11" y="8" width="7" height="1.5" rx="0.75" fill="#fff" fill-opacity="0.7"/>
+  <circle cx="7" cy="15" r="2" fill="#fff" fill-opacity="0.4"/>
+  <rect x="11" y="14" width="5" height="1.5" rx="0.75" fill="#fff" fill-opacity="0.35"/>
+</svg>

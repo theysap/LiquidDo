@@ -1,0 +1,7 @@
+node_modules/
+dist/
+chrome/
+package-lock.json
+src/icons/
+src/fonts/
+assets/**/*.png

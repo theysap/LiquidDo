@@ -19,3 +19,8 @@ body:
     attributes:
       label: Screenshots
       description: Optional — please blur any personal task text.
+  - type: input
+    id: timezone
+    attributes:
+      label: Time zone (for due-date problems)
+      placeholder: Picked America/New_York · my computer is Asia/Kolkata

@@ -10,13 +10,15 @@ LiquidDo is a browser extension that keeps a simple to-do list in your Chrome to
 
 ## What LiquidDo stores
 
-- **Your tasks** — the text you type, whether each task is done, and when it was created and completed — saved with `chrome.storage.local`.
+- **Your tasks** — the text you type, whether each task is done, when it was created and completed, and, if you set one, its due date and time and the time zone you chose — saved with `chrome.storage.local`.
 
 This data stays on your computer. It is not synced to other devices and is never sent anywhere. Deleting a task, clearing completed tasks, or removing the extension removes it.
 
 ## Network activity
 
-LiquidDo never sends your tasks over the network. The only request the popup makes is to load the **Lora** typeface from Google Fonts (`fonts.googleapis.com` / `fonts.gstatic.com`), which works like any website that uses Google Fonts. Google may see your IP address and browser details as part of serving the font file; no task data is included. See [Google Fonts' privacy FAQ](https://developers.google.com/fonts/faq/privacy).
+**None.** LiquidDo makes no network requests: its code, icons and fonts are all bundled inside the extension, and its content security policy blocks any request to the internet. Your time zone is read from your browser on your computer and is never sent anywhere.
+
+The **User manual** (theysap.com) and **Report an issue** (GitHub) links at the bottom of the popup open a new tab only when you click them.
 
 ## Permissions
 
