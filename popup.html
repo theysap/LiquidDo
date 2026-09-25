@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LiquidDo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-glass">
+      <div class="header-left">
+        <div class="app-icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <rect width="22" height="22" rx="6" fill="url(#iconGrad)"/>
+            <circle cx="7" cy="9" r="2" fill="rgba(255,255,255,0.9)"/>
+            <rect x="11" y="8" width="7" height="1.5" rx="0.75" fill="rgba(255,255,255,0.7)"/>
+            <circle cx="7" cy="15" r="2" fill="rgba(255,255,255,0.4)"/>
+            <rect x="11" y="14" width="5" height="1.5" rx="0.75" fill="rgba(255,255,255,0.35)"/>
+            <defs>
+              <linearGradient id="iconGrad" x1="0" y1="0" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#5B5FED"/>
+                <stop offset="100%" stop-color="#3A3FAD"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="app-title">LiquidDo</span>
+      </div>
+      <div class="task-count" id="taskCount">0 tasks</div>
+    </div>
+  </div>
+
+  <!-- Tab Bar -->
+  <div class="tab-bar">
+    <button class="tab active" id="tabActive">
+      <span class="tab-dot active-dot"></span>
+      Active
+    </button>
+    <button class="tab" id="tabCompleted">
+      <span class="tab-dot done-dot"></span>
+      Completed
+    </button>
+  </div>
+
+  <!-- Task Input -->
+  <div class="input-section" id="inputSection">
+    <div class="input-glass">
+      <input
+        type="text"
+        id="taskInput"
+        class="task-input"
+        placeholder="Add a new task…"
+        maxlength="120"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <button class="add-btn" id="addBtn" aria-label="Add task">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <circle cx="9" cy="9" r="9" fill="url(#addGrad)"/>
+          <rect x="8.1" y="4" width="1.8" height="10" rx="0.9" fill="white"/>
+          <rect x="4" y="8.1" width="10" height="1.8" rx="0.9" fill="white"/>
+          <defs>
+            <linearGradient id="addGrad" x1="0" y1="0" x2="18" y2="18" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#6C70F0"/>
+              <stop offset="100%" stop-color="#4A4ED4"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Tasks List -->
+  <div class="tasks-container" id="tasksContainer">
+    <div class="tasks-list" id="tasksList"></div>
+    <div class="empty-state" id="emptyState" style="display:none">
+      <div class="empty-icon">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+          <circle cx="20" cy="20" r="18" stroke="rgba(108,112,240,0.3)" stroke-width="1.5"/>
+          <path d="M13 20.5l5 5 9-10" stroke="rgba(108,112,240,0.5)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <p class="empty-title" id="emptyTitle">All clear!</p>
+      <p class="empty-sub" id="emptySub">Add a task above to get started.</p>
+    </div>
+  </div>
+
+  <!-- Footer Actions (for completed tab) -->
+  <div class="footer" id="footer" style="display:none">
+    <button class="clear-btn" id="clearBtn">
+      <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
+        <path d="M2 2l9 9M11 2l-9 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      Clear all completed
+    </button>
+  </div>
+
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+# Chrome Web Store release bundles (zip, store images) — never committed
+chrome/
+*.zip
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
